@@ -1,8 +1,6 @@
 pipeline {
-    agent { label "dev-server"}
-    
+    agent any
     stages {
-        
         stage("code"){
             steps{
                 git url: "https://github.com/akshu20791/cicd-project2/", branch: "master"
